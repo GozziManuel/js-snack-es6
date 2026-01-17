@@ -9,5 +9,12 @@ function randomNumber(min, max) {
   const random = Math.floor(Math.random() * (max - min + 1) + min);
   return random;
 }
-const rng = randomNumber(1, 100);
-console.log(squadre);
+
+function replaced(array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i].goal = randomNumber(1, 100);
+    array[i].goalsubiti = randomNumber(1, 100);
+  }
+  console.log(array);
+}
+replaced(squadre);
