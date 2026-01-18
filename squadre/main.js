@@ -13,8 +13,17 @@ function randomNumber(min, max) {
 function replaced(array) {
   for (let i = 0; i < array.length; i++) {
     array[i].goal = randomNumber(1, 100);
+    1;
     array[i].goalsubiti = randomNumber(1, 100);
   }
   console.log(array);
 }
 replaced(squadre);
+
+function remover(array) {
+  for (let i = 0; i < array.length; i++) {
+    delete array[i].goalsubiti;
+  }
+  console.log(array);
+}
+remover(squadre);
